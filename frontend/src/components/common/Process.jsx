@@ -7,7 +7,7 @@ const images = [
   { src: assets.civil, alt: 'Civil Work' },
   { src: assets.haulage, alt: 'Haulage' },
   { src: assets.earthmoving, alt: 'Earthmoving' },
-  { src: assets.transport, alt: 'Transport' },
+  { src: assets.transportImg, alt: 'Transport' },
   { src: assets.plantHire, alt: 'Plant Hire' },
 ];
 

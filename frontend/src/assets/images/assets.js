@@ -1,5 +1,5 @@
 import haulage from '../images/haulage.jpeg'
-import transport from '../images/transport.jpg'
+import transportImg from '../images/transport.jpg'
 import civil from '../images/civil-works.jpg'
 import plantHire from '../images/plant-hire.jpg'
 import demolition from '../images/Demolition.jpg'
@@ -15,7 +15,7 @@ import blogImg4 from '../images/construction7.jpg'
 
 export const assets = {
 	haulage,
-	transport,
+	transportImg,
 	civil,
 	plantHire,
 	demolition,

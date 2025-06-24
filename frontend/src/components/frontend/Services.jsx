@@ -77,7 +77,7 @@ const Services = () => {
                     <div className='col-md-4 col-lg-4'>
                       <div className='item'>
                         <div className='service-image'>
-                          <img src={assets.transport} alt="Transport" className='w-100' />
+                          <img src={assets.transportImg} alt="Transport" className='w-100' />
                         </div>
                         <div className='service-body'>
                           <div className='service-title d-flex align-items-center gap-2'>
