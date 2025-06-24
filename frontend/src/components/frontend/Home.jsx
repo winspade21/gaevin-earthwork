@@ -143,129 +143,128 @@ const Home = () => {
                     With skilled operators and reliable machinery, we deliver results that last.
                   </p>
               </div>
-              <div className='row gy-4 pt-4'>
-
-            {/* Demolition */}
-            <div className='col-md-4 col-lg-4'>
-              <div className='item'>
-                <div className='service-image'>
-                  <img src={assets.demolition} alt="Demolition" className='w-100' />
-                </div>
-                <div className='service-body'>
-                  <div className='service-title d-flex align-items-center gap-2'>
-                    <i className="fas fa-hammer service-icon"></i>
-                    <h3 className="mb-0">Demolition</h3>
-                  </div>
-                  <div className='service-content'>
-                    <p>We provide safe and compliant demolition for residential and commercial projects—executed with precision and care.</p>
-                    <p>Our licensed team ensures minimal disruption and complete site clearance.</p>
-                  </div>
-                  <a href="#" className='btn btn-primary'>Read More</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Earthmoving */}
-            <div className='col-md-4 col-lg-4'>
-              <div className='item'>
-                <div className='service-image'>
-                  <img src={assets.earthmoving} alt="Earthmoving" className='w-100' />
-                </div>
-                <div className='service-body'>
-                  <div className='service-title d-flex align-items-center gap-2'>
-                    <i className="fas fa-mountain service-icon"></i>
-                    <h3 className="mb-0">Earthmoving</h3>
-                  </div>
-                  <div className='service-content'>
-                    <p>We shape terrain to match your project’s exact specifications—handling cuts, fills, and grading with efficiency.</p>
-                    <p>Our fleet and operators are equipped for all scales of excavation.</p>
-                  </div>
-                  <a href="#" className='btn btn-primary'>Read More</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Transport */}
-            <div className='col-md-4 col-lg-4'>
-              <div className='item'>
-                <div className='service-image'>
-                  <img src={assets.transportImg} alt="Transport" className='w-100' />
-                </div>
-                <div className='service-body'>
-                  <div className='service-title d-flex align-items-center gap-2'>
-                    <i className="fas fa-truck-moving service-icon"></i>
-                    <h3 className="mb-0">Transport</h3>
-                  </div>
-                  <div className='service-content'>
-                    <p>We deliver reliable haulage and transport solutions across varied terrains.</p>
-                    <p>From aggregate to equipment, your materials arrive securely and on time.</p>
-                  </div>
-                  <a href="#" className='btn btn-primary'>Read More</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Haulage */}
-            <div className='col-md-4 col-lg-4'>
-              <div className='item'>
-                <div className='service-image'>
-                  <img src={assets.haulage} alt="Haulage" className='w-100' />
-                </div>
-                <div className='service-body'>
-                  <div className='service-title d-flex align-items-center gap-2'>
-                    <i className="fas fa-dolly service-icon"></i>
-                    <h3 className="mb-0">Haulage</h3>
-                  </div>
-                  <div className='service-content'>
-                    <p>From heavy loads to bulk material, we offer dependable haulage for every job.</p>
-                    <p>Our team ensures secure transport logistics that align with your deadlines.</p>
-                  </div>
-                  <a href="#" className='btn btn-primary'>Read More</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Plant Hire */}
-            <div className='col-md-4 col-lg-4'>
-              <div className='item'>
-                <div className='service-image'>
-                  <img src={assets.plantHire} alt="Plant Hire" className='w-100' />
-                </div>
-                <div className='service-body'>
-                  <div className='service-title d-flex align-items-center gap-2'>
-                    <i className="fas fa-tractor service-icon"></i>
-                    <h3 className="mb-0">Plant Hire</h3>
-                  </div>
-                  <div className='service-content'>
-                    <p>Hire modern, well-maintained machinery operated by experienced professionals.</p>
-                    <p>Flexible terms and reliable support ensure productivity on your site.</p>
-                  </div>
-                  <a href="#" className='btn btn-primary'>Read More</a>
-                </div>
-              </div>
-            </div>
-
-              {/* Civil Works */}
-              <div className='col-md-4 col-lg-4'>
-                <div className='item'>
-                  <div className='service-image'>
-                    <img src={assets.civil} alt="Civil Works" className='w-100' />
-                  </div>
-                  <div className='service-body'>
-                    <div className='service-title d-flex align-items-center gap-2'>
-                      <i className="fas fa-road service-icon"></i>
-                      <h3 className="mb-0">Civil Works</h3>
-                    </div>
-                    <div className='service-content'>
-                      <p>We handle road preparation, drainage, and trenching with expert precision.</p>
-                      <p>Our civil capabilities ensure your infrastructure meets both code and durability standards.</p>
-                    </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
-                  </div>
-                </div>
-              </div>
-
-          </div>          
+           <div className='row gy-4'>
+                      
+                     {/* Demolition */}
+                     <div className='col-md-4 col-lg-4' id="demolition">
+                       <div className='item'>
+                         <div className='service-image'>
+                           <img src={assets.demolition} alt="Demolition" className='w-100' />
+                         </div>
+                         <div className='service-body'>
+                           <div className='service-title d-flex align-items-center gap-2'>
+                             <i className="fas fa-hammer service-icon"></i>
+                             <h3 className="mb-0">Demolition</h3>
+                           </div>
+                           <div className='service-content'>
+                             <p>We provide safe and compliant demolition for residential and commercial projects—executed with precision and care.</p>
+                             <p>Our licensed team ensures minimal disruption and complete site clearance.</p>
+                           </div>
+                           <Link to="/services/demolition" className='btn btn-primary'>Read More</Link>
+                         </div>
+                       </div>
+                     </div>
+           
+                     {/* Earthmoving */}
+                     <div className='col-md-4 col-lg-4' id="earthmoving">
+                       <div className='item'>
+                         <div className='service-image'>
+                           <img src={assets.earthmoving} alt="Earthmoving" className='w-100' />
+                         </div>
+                         <div className='service-body'>
+                           <div className='service-title d-flex align-items-center gap-2'>
+                             <i className="fas fa-mountain service-icon"></i>
+                             <h3 className="mb-0">Earthmoving</h3>
+                           </div>
+                           <div className='service-content'>
+                             <p>We shape terrain to match your project’s exact specifications—handling cuts, fills, and grading with efficiency.</p>
+                             <p>Our fleet and operators are equipped for all scales of excavation.</p>
+                           </div>
+                           <Link to="/services/earthmoving" className='btn btn-primary'>Read More</Link>
+                         </div>
+                       </div>
+                     </div>
+           
+                     {/* Transport */}
+                     <div className='col-md-4 col-lg-4' id="transport">
+                       <div className='item'>
+                         <div className='service-image'>
+                           <img src={assets.transportImg} alt="Transport" className='w-100' />
+                         </div>
+                         <div className='service-body'>
+                           <div className='service-title d-flex align-items-center gap-2'>
+                             <i className="fas fa-truck-moving service-icon"></i>
+                             <h3 className="mb-0">Transport</h3>
+                           </div>
+                           <div className='service-content'>
+                             <p>We deliver reliable haulage and transport solutions across varied terrains.</p>
+                             <p>From aggregate to equipment, your materials arrive securely and on time.</p>
+                           </div>
+                           <Link to="/services/transport" className='btn btn-primary'>Read More</Link>
+                         </div>
+                       </div>
+                     </div>
+           
+                     {/* Haulage */}
+                     <div className='col-md-4 col-lg-4' id="haulage">
+                       <div className='item'>
+                         <div className='service-image'>
+                           <img src={assets.haulage} alt="Haulage" className='w-100' />
+                         </div>
+                         <div className='service-body'>
+                           <div className='service-title d-flex align-items-center gap-2'>
+                             <i className="fas fa-dolly service-icon"></i>
+                             <h3 className="mb-0">Haulage</h3>
+                           </div>
+                           <div className='service-content'>
+                             <p>From heavy loads to bulk material, we offer dependable haulage for every job.</p>
+                             <p>Our team ensures secure transport logistics that align with your deadlines.</p>
+                           </div>
+                           <Link to="/services/haulage" className='btn btn-primary'>Read More</Link>
+                         </div>
+                       </div>
+                     </div>
+           
+                     {/* Plant Hire */}
+                     <div className='col-md-4 col-lg-4' id="plant-hire">
+                       <div className='item'>
+                         <div className='service-image'>
+                           <img src={assets.plantHire} alt="Plant Hire" className='w-100' />
+                         </div>
+                         <div className='service-body'>
+                           <div className='service-title d-flex align-items-center gap-2'>
+                             <i className="fas fa-tractor service-icon"></i>
+                             <h3 className="mb-0">Plant Hire</h3>
+                           </div>
+                           <div className='service-content'>
+                             <p>Hire modern, well-maintained machinery operated by experienced professionals.</p>
+                             <p>Flexible terms and reliable support ensure productivity on your site.</p>
+                           </div>
+                           <Link to="/services/plant-hire" className='btn btn-primary'>Read More</Link>
+                         </div>
+                       </div>
+                     </div>
+           
+                     {/* Civil Works */}
+                     <div className='col-md-4 col-lg-4' id="civil">
+                       <div className='item'>
+                         <div className='service-image'>
+                           <img src={assets.civil} alt="Civil Works" className='w-100' />
+                         </div>
+                         <div className='service-body'>
+                           <div className='service-title d-flex align-items-center gap-2'>
+                             <i className="fas fa-road service-icon"></i>
+                             <h3 className="mb-0">Civil Works</h3>
+                           </div>
+                           <div className='service-content'>
+                             <p>We handle road preparation, drainage, and trenching with expert precision.</p>
+                             <p>Our civil capabilities ensure your infrastructure meets both code and durability standards.</p>
+                           </div>
+                           <Link to="/services/civil" className='btn btn-primary'>Read More</Link>
+                         </div>
+                       </div>
+                     </div>
+              </div>        
         </div>
       </section>
 
