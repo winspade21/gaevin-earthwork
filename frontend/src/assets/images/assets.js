@@ -1,5 +1,5 @@
 import haulage from '../images/haulage.jpeg'
-import transport from '../images/Transport.jpg'
+import transport from '../images/transport.jpg'
 import civil from '../images/civil-works.jpg'
 import plantHire from '../images/plant-hire.jpg'
 import demolition from '../images/Demolition.jpg'
