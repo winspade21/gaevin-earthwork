@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import Header from '../common/Header';
-import Footer from '../common/Footer';
+
 import { assets } from '../../assets/images/assets.js';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -22,7 +21,6 @@ const Services = () => {
 
   return (
     <>
-      <Header />
       <section className="services-hero position-relative">
         <div className="hero-overlay d-flex flex-column justify-content-center align-items-center text-center">
           <div className="container">
@@ -168,7 +166,6 @@ const Services = () => {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 };

@@ -26,13 +26,13 @@ const Header = () => {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand as={Link} to="/" className="logo">
-            <span>Gaevin</span> Earthwork
+          <Navbar.Brand href="/" className="logo">
+          <span>Gaevin</span> Earthwork
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
             <Nav className="mx-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <a href="/" className="nav-link">Home</a>
               <Nav.Link as={Link} to="/about">About Us</Nav.Link>
 
               <NavDropdown title="Services" id="services-dropdown">
@@ -48,15 +48,17 @@ const Header = () => {
                 <NavDropdown.Item as={Link} to="/services/civil">Civil</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#blogs">Blogs</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contacts</Nav.Link>
+              <Nav.Link href="/projects">Projects</Nav.Link>
+              <Nav.Link href="/blogs">Blogs</Nav.Link>
+              <Nav.Link as={Link} to="/faqs">FAQ</Nav.Link>
             </Nav>
-            <div className="nav-cta-button">
-              <button className="nav-quote-btn">
-                <FaPhone /> (123) 456-7890
-              </button>
-            </div>
+          <div className="nav-cta-button">
+              <Link to="/contact">
+                <button className="nav-quote-btn">
+                  <FaPhone /> Contact Us
+                </button>
+              </Link>
+          </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

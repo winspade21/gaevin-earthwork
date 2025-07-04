@@ -1,6 +1,17 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; 
+
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaLinkedin
+} from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -9,29 +20,31 @@ const Footer = () => {
         <Row className="mb-4">
           <Col md={3}>
             <h5>Gaevin Earthwork</h5>
-            <p>We provide reliable and efficient earthmoving services backed by years of experience and a commitment to quality. From residential to large-scale commercial projects, we deliver precise results on time, every time.</p>
+            <p>
+              We provide reliable and efficient earthmoving services backed by years of experience and a commitment to quality.
+              From residential to large-scale commercial projects, we deliver precise results on time, every time.
+            </p>
           </Col>
 
-        <Col md={3}>
-            <a href="/services"><h5>Our Services</h5></a>
+          <Col md={3}>
+            <Link to="/services"><h5>Our Services</h5></Link>
             <ul>
-              <li><a href="">Demolition</a></li>
-              <li><a href="">Earthmoving</a></li>
-              <li><a href="">Haulage</a></li>
-              <li><a href="">Plant Hire</a></li>
-              <li><a href="">Transport</a></li>
-              <li><a href="">Civil</a></li>
+              <li><Link to="/services/demolition">Demolition</Link></li>
+              <li><Link to="/services/earthmoving">Earthmoving</Link></li>
+              <li><Link to="/services/haulage">Haulage</Link></li>
+              <li><Link to="/services/plant-hire">Plant Hire</Link></li>
+              <li><Link to="/services/transport">Transport</Link></li>
+              <li><Link to="/services/civil">Civil</Link></li>
             </ul>
           </Col>
-         
-        
+
           <Col md={3}>
             <h5>Quick Links</h5>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Blogs</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/blogs">Blogs</Link></li>
             </ul>
           </Col>
 
@@ -43,19 +56,21 @@ const Footer = () => {
               <li><FaEnvelope /> <a href="mailto:info@gaevinsearthmoving.com">info@gaevinearthwork.com</a></li>
             </ul>
             <div className="d-flex gap-3 mt-3 social-icons">
-                <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookF />
-                </a>
-                <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram />
-                </a>
-                <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin />
-                </a>
+              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <FaFacebookF />
+              </a>
+              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
             </div>
           </Col>
         </Row>
+
         <hr />
+
         <Row>
           <Col className="text-center">
             <p>&copy; {new Date().getFullYear()} Gaevin's Earthmoving. All rights reserved.</p>

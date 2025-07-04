@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { assets } from '../../assets/images/assets.js';
 
 const images = [
@@ -14,6 +16,28 @@ const images = [
 const Process = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+  useEffect(() => {
+    // Lock body scroll when modal is open
+    document.body.style.overflow = modalOpen ? 'hidden' : 'auto';
+
+    // Keyboard navigation
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setModalOpen(false);
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'ArrowLeft') prevImage();
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = 'auto';
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [modalOpen]);
 
   const openModal = (index) => {
     setCurrentIndex(index);
@@ -43,7 +67,7 @@ const Process = () => {
 
         <div className="row g-4">
           {images.map((item, index) => (
-            <div className="col-md-4" key={index}>
+            <div className="col-md-4" key={index} data-aos="zoom-in">
               <div
                 className="gallery-image rounded overflow-hidden"
                 onClick={() => openModal(index)}

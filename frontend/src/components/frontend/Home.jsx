@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { assets } from '../../assets/images/assets.js';
 
-import Header from '../common/Header.jsx';
-import Footer from '../common/Footer.jsx';
+
 
 
 import img1 from '../../assets/images/slide1.jpg';
@@ -30,7 +29,6 @@ const Home = () => {
  
   return (
     <>
-    <Header/>
     <main>
       {/* Hero */}
       <section className="section-1">
@@ -58,12 +56,12 @@ const Home = () => {
                 </p>
 
                 <div className="mt-3">
-                    <Link to="/">
-                      <button className="btn hero-btn">Get a Quote</button>
-                    </Link>
-                    <Link to="/services">
-                      <button className="btn hero-btn1 ms-3">Our Services</button>
-                    </Link>
+                <Link to="/contact" className="hero-btn btn me-3 text-decoration-none">
+                        Get A Quote
+                </Link>
+                <Link  to="/services" className="hero-btn1 btn ms-3 text-decoration-none">
+                  Our Services
+                </Link>
                 </div>
               </div>
             </div>
@@ -402,7 +400,7 @@ const Home = () => {
     <Process/>
 
     </main>
-    <Footer/>
+
 
     </>
   );
