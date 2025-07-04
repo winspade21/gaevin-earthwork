@@ -48,16 +48,16 @@ const Header = () => {
                 <NavDropdown.Item as={Link} to="/services/civil">Civil</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="/projects">Projects</Nav.Link>
-              <Nav.Link href="/blogs">Blogs</Nav.Link>
-              <Nav.Link as={Link} to="/faqs">FAQ</Nav.Link>
+              <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+              <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+              <Nav.Link as={Link} to="/FAQs">FAQ</Nav.Link>
             </Nav>
           <div className="nav-cta-button">
               <Link to="/contact">
                 <button className="nav-quote-btn">
                   <FaPhone /> Contact Us
                 </button>
-              </Link>
+              </Link> 
           </div>
           </Navbar.Collapse>
         </Container>

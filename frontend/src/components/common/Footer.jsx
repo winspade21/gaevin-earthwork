@@ -51,7 +51,7 @@ const Footer = () => {
           <Col md={3}>
             <h5>Contact</h5>
             <ul>
-              <li><FaMapMarkerAlt /> 123 Earthmoving Road, QLD</li>
+              <li><FaMapMarkerAlt /> 767 Windsor Road, Box Hill NSW 2765</li>
               <li><FaPhone /> <a href="tel:1234567890">(123) 456-7890</a></li>
               <li><FaEnvelope /> <a href="mailto:info@gaevinsearthmoving.com">info@gaevinearthwork.com</a></li>
             </ul>

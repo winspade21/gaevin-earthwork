@@ -57,3 +57,27 @@ export const testimonials = [
     content: "Their professionalism, attention to detail, and clear communication made the entire process smooth and stress-free. Highly impressed!"
   },
 ];
+
+
+export const faqData = [
+  {
+    question: "What services do you offer?",
+    answer: "We offer excavation, site preparation, land clearing, trenching, and backyard transformations.",
+  },
+  {
+    question: "Which areas do you service?",
+    answer: "We serve all of Sydney and surrounding regions. Contact us to confirm your location.",
+  },
+  {
+    question: "Are you licensed and insured?",
+    answer: "Yes, Gaevin Earthwork is fully licensed and insured for all operations.",
+  },
+  {
+    question: "How do I request a quote?",
+    answer: "Simply contact us with your project details, and we'll provide a free, no-obligation quote.",
+  },
+   {
+    question: "Do you work with both residential and commercial clients?",
+    answer: "Absolutely! We handle everything from backyard projects to large-scale developments.",
+  }
+];

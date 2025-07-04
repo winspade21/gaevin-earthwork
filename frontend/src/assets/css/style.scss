@@ -150,16 +150,6 @@ header {
   min-height: 100vh;
   overflow: hidden;
 
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
   .bg-slide {
     position: absolute;
@@ -554,7 +544,7 @@ header {
 }
 }
 
-
+// TESTIOMIAL SECTION
 .section-5 {
   background-color: #f8f9fa;
   padding: 80px 0;
@@ -766,6 +756,8 @@ header {
   }
 }
 
+
+// BLOG & POST
 .section-6 {
   background-color: #f8f9fa;
 
@@ -874,9 +866,8 @@ header {
 }
 
 
-/* Image Modal + Swipe UI  */
-
-
+/*  Image Modal + Swipe UI  */
+// How We Work
 .image-modal {
   position: fixed;
   inset: 0;
@@ -941,6 +932,7 @@ header {
   }
 }
 
+// gallery-animation
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1046,35 +1038,111 @@ header {
   }
 }
 
-// service-page
-.services-hero {
+//about-page
+.about-hero {
   position: relative;
-  background-image: url('../../assets/images/construction2.jpg'); // replace with your actual path
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 500px;
+  min-height: 60vh; 
+  background: url('../../assets/images/construction122.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
 
   .hero-overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+
+      .hero-title {
+        color: $primary-color;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        animation: fadeUp .8s ease-in forwards;
+        animation-delay: 0.2s;
+         @media (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 1.125rem;
+        line-height: 1.6;  
+        animation: fadeUp 1s ease-in forwards;
+        animation-delay: 0.5s; 
+        opacity: 0; 
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        } 
+      }
+    }
+  }
+
+  .hero-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+// service-page
+.services-hero {
+  position: relative;
+  min-height: 60vh; 
+  background: url('../../assets/images/construction2.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff; 
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
     color: $text-white;
     padding: 3rem 1rem;
 
     .hero-title {
-      font-size: 4.5rem;
-      font-weight: bold;
-      animation: fadeUp .8s ease-out forwards;
-      color: $primary-color;
-    }
+        color: $primary-color;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        animation: fadeUp .8s ease-in forwards;
+        animation-delay: 0.2s;
+         @media (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
 
     .hero-subtitle {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      animation: fadeUp 1.2s ease-out forwards;
+        font-size: 1.125rem;
+        line-height: 1.6;  
+        animation: fadeUp 1s ease-in forwards;
+        animation-delay: 0.5s; 
+        opacity: 0; 
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        } 
+      }
     }
-  }
 
   .hero-bottom-shape {
     position: absolute;
@@ -1093,14 +1161,431 @@ header {
   }
 }
 
-// fade animation
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+
+//project-page
+.project-hero {
+  position: relative;
+  min-height: 60vh; 
+  background: url('../../assets/images/construction10.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+
+      .hero-title {
+        color: $primary-color;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        animation: fadeUp .8s ease-in forwards;
+        animation-delay: 0.2s;
+         @media (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 1.125rem;
+        line-height: 1.6;  
+        animation: fadeUp 1s ease-in forwards;
+        animation-delay: 0.5s; 
+        opacity: 0; 
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        } 
+      }
+    }
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 }
+
+
+//blog-page
+.blog-hero {
+  position: relative;
+  min-height: 60vh; 
+  background: url('../../assets/images/construction12121.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+
+      .hero-title {
+        color: $primary-color;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        animation: fadeUp .8s ease-in forwards;
+        animation-delay: 0.2s;
+         @media (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.6;  
+        animation: fadeUp 1s ease-in forwards;
+        animation-delay: 0.5s; 
+        opacity: 0; 
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        } 
+      }
+    }
+  }
+
+  .hero-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Contact Hero
+.contact-hero {
+  position: relative;
+  height: 400px;
+  background: url('../../assets/images/construction3.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 1rem;
+
+      .hero-title {
+        color: $primary-color;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        animation: fadeUp 0.8s ease-in forwards;
+        animation-delay: 0.2s;
+
+        @media (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+
+    }
+  }
+
+  .hero-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Contact PAGE Section
+.contact-main-section {
+  h3{
+    font-size: 2.5em;
+    font-weight: 600;
+    justify-content: right;
+  } 
+  h4 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #222;
+    margin: 2px;
+  }
+
+  p {
+    color: #555;
+    font-size: 1rem;
+  }
+
+  .contact-info-box {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333;
+    svg {
+      color: $primary-color;
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    svg {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: $primary-color;
+    }
+
+    margin-bottom: 0.75rem;
+  }
+
+  iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .social-icons {
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $primary-color;
+      color: $dark-background;
+      font-size: 1.1rem;
+      border: 1px solid #ddd;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $text-white;
+        background-color: $dark-background;
+      }
+    }
+  }
+form {
+  background-color: $dark-background;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  label {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+    }
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: color.adjust($primary-color, $lightness: -8%);
+    }
+  }
+}
+
+  @media (max-width: 768px) {
+    .contact-info-box {
+      font-size: 0.95rem;
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
+  }
+}
+
+// FAQs Hero Section
+.faq-hero {
+  position: relative;
+  height: 500px;
+  background: url('../../assets/images/construction4.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 1rem;
+
+      .hero-title {
+        color: color.adjust($primary-color, $lightness: +5%);
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        opacity: 0;
+        animation: fadeUp 0.8s ease-in forwards;
+        animation-delay: 0.2s;
+
+        @media (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+        opacity: 0;
+        animation: fadeUp 1s ease-in forwards;
+        animation-delay: 0.5s;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .hero-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// FAQs Page Section
+.faq-section {
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .accordion-item {
+      border: none;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      .accordion-button {
+        background-color: #fff;
+        font-weight: 500;
+        color: #333;
+        padding: 1rem 1.25rem;
+        transition: background-color 0.2s ease;
+        font-size: 1.7rem;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+          background-color: #e9ecef;
+        }
+      }
+
+      .accordion-body {
+        background-color: #fff;
+        padding: 1rem 1.25rem;
+        color: #555;
+      }
+    }
+  }
+}
+
+
+
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
